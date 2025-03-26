@@ -189,5 +189,69 @@ Its 2^32 - 1 - 1 which is 2^32 - 2.
 
 So, its -2.
 
-### Right Shift Operator >>
+### Right Shift Operator >>, >>>
+
+It shifs the binary bits y the number of times its mentio
+n in this operator.
+
+- Signed Right Shift: It treats negatives and positive numbers differently.
+In case, of positive it fills the leading bits with 0.
+In case, of negative it fills the leading bits with 1, to keep the sign.
+
+x: 000000000000.....0011
+(x>>1): *0*00000000000.......011
+
+(x>>2): *0*00000.......011
+
+(x>>4): *0*0000000.....011
+
+y: 11111.......10
+(y>>1): *1*1111111...........1
+ 
+- Unsigned Right Shift  >>>
+This also shift the bits to the right according to the number of poitions given, here we fill the **leading bits with 0 for the negative numbers too.**
+
+It considers filling 0 for both negative and positive numbers.
+
+x: 1111.......10
+(x>>>1): 01111..........11 -> 2^31 - 1
+(x>>>2): 001111.......11 -> 2^30 - 1
+
+
+#### Questions
+-> Sum of N numbers - Use n*(n+1)/2 formula.
+-> Find the last digit of a number - Take modulus of the number with 10. 123%10 = 3. Also take the absoulte value of the number to remove the sign.
+-> Day before N days - Two inputs d and n, d for on which day you are and n for the days you have to go back in time.
+ans = n%7
+ans > 0? ans: ans+7;
+
+-> nth term of AP
+Use a + (n-1)*d Formula.
+a = first term of the A.P.
+n = nth term of the A.P.
+d = difference of the terms of the A.P.
+
+-> nth term of GP
+2, 4, 8, 16, 32......
+
+4/2=2, 8/4=2, 16/8=2
+
+formula -> a*r^(n-1)
+
+```java
+public static int nth_term(int a, int r, int n){
+    int n = a*(int)(Math.pow(r, n-1)); // Math.pow() gives answer in double. So, it is converted into an integer. 
+    return n;
+}
+
+public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int a  = s.nextInt();
+    int r = s.nextInt();
+    int n = s.nextInt();
+
+    System.out.print(nth_term(a,r,n));
+}
+```
+
 
