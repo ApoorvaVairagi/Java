@@ -163,3 +163,36 @@ java GfG arg1 arg2 arg3
 
 Example:
 java GfG Geeks at GeeksforGeeks
+
+-----
+
+- Q. First digit of a Number
+
+public static int giveFirst(int n){
+  while(n>10{
+  n=n/10;
+  }
+  return n;
+}
+
+**Approch 2**
+- To get the value of the power of 10 from which we have to divide the number.
+  
+public static int giveFirst(int n){
+  double power = Math.log10(n);
+  int p = (int)power;
+  int a = Math.pow(10, p);
+  int ans = n/a;
+  return ans;
+}
+
+- Q. Prime Factorization.
+We have to give the prime factors of a number.
+Input - 50
+Output - 2, 5, 5
+
+Input - 20
+Output - 2, 2, 5
+
+Input - 13
+Output - 13
