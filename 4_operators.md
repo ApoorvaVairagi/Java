@@ -386,8 +386,8 @@ Output
 -> Find the last digit of a number - Take modulus of the number with 10. 123%10 = 3. Also take the absoulte value of the number to remove the sign.
 
 -> Day before N days - Two inputs d and n, d for on which day you are and n for the days you have to go back in time.
-ans = n%7
-ans > 0? ans: ans+7;
+int t = n%7;  
+int ans = (d>=t)?(d-t):(d-t+7);
 
 -> nth term of AP
 Use **a + (n-1)*d Formula**.
