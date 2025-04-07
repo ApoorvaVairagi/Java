@@ -141,7 +141,24 @@ class Test{
 ```
 Output - 0 1 2
 
--> Q. 
+-> Q. Number of Digits
+Input: 7645
+Output: 4
+
+```java
+class Test{
+  public static int digitNo(int n){
+    int sum=0;
+    while(n > 0){
+      sum++;
+      n = n/10;
+    }
+    return sum;
+  }
+}
+```
+
+
 
 
 
