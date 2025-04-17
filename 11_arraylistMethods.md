@@ -30,3 +30,4 @@
 | `toArray()`                      | This method is used to return an array containing all of the elements in the list in the correct order. |
 | `toArray(Object[] O)`           | It is also used to return an array containing all of the elements in this list in the correct order same as the previous method. |
 | `trimToSize()`                  | This method is used to trim the capacity of the instance of the ArrayList to the list's current size. |
+

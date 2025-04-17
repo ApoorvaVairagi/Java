@@ -104,7 +104,7 @@ remove(Object): This method is used to simply remove an object from the ArrayLis
 
 remove(int index): Since an ArrayList is indexed, this method takes an integer value which simply removes the element present at that specific index in the ArrayList. After removing the element, all the elements are moved to the left to fill the space and the indices of the objects are updated.
  
-Example
+Example 
 
 ```java
 // Java program to Remove Elements in ArrayList

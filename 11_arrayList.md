@@ -57,3 +57,4 @@ Important Features:
 * ArrayList can not be used for primitive types, like int, char, etc. We need a wrapper class for such cases.
 * ArrayList in Java can be seen as a vector in C++.
 * ArrayList is not Synchronized. Its equivalent synchronized class in Java is Vector.
+
